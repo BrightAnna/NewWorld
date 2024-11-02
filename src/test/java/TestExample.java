@@ -13,13 +13,6 @@ public class TestExample {
         WebDriver driver = new ChromeDriver();
         driver.get("https://the-internet.herokuapp.com/");
 
-        List<WebElement> allLinks = driver.findElements(By.tagName("a"));
-        for (WebElement link : allLinks) {
-            System.out.println(link.getAttribute("href"));
-        }
-
-        allLinks.get(9).click();
-
     }
 
 }
